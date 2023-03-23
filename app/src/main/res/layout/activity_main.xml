@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:paddingStart="20dp"
+    android:paddingTop="10dp"
+    android:paddingEnd="20dp"
+    android:paddingBottom="20dp">
+
+    <LinearLayout
+        android:layout_width="548dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="548dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/pre_year_bt"
+                android:layout_width="80dp"
+                android:layout_height="65dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/bt_pre_year_selector" />
+
+            <Button
+                android:id="@+id/pre_month_bt"
+                android:layout_width="81dp"
+                android:layout_height="65dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/bt_pre_month_selector" />
+
+            <TextView
+                android:id="@+id/year_tv"
+                android:layout_width="103dp"
+                android:layout_height="65dp"
+                android:background="@drawable/tv_year_or_month_shape"
+                android:layout_marginRight="4dp"
+                android:gravity="center"
+                android:text="2022"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/month_bt"
+                android:layout_width="103dp"
+                android:layout_height="65dp"
+                android:background="@drawable/tv_year_or_month_shape"
+                android:layout_marginRight="4dp"
+                android:gravity="center"
+                android:text="  6月"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/next_month_bt"
+                android:layout_width="81dp"
+                android:layout_height="65dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/bt_next_month_selector" />
+
+            <Button
+                android:id="@+id/next_year_bt"
+                android:layout_width="80dp"
+                android:layout_height="65dp"
+                android:layout_weight="1"
+                android:background="@drawable/bt_next_year_selector" />
+
+        </LinearLayout>
+
+        <com.haibin.calendarview.CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="548dp"
+            android:layout_height="478dp"
+            android:layout_marginTop="13dp"
+            app:current_day_lunar_text_color="#8FA6FF"
+            app:current_day_text_color="#8FA6FF"
+            app:current_month_lunar_text_color="#3D4F5F"
+            app:current_month_text_color="#3D4F5F"
+            app:day_text_size="25sp"
+            app:lunar_text_size="10sp"
+            app:max_year="2050"
+            app:max_year_day="31"
+            app:max_year_month="12"
+            app:min_year="2008"
+            app:min_year_day="1"
+            app:min_year_month="1"
+            app:month_view="com.example.calendar.tsl.TSLMonthView"
+
+            app:month_view_auto_select_day="last_select_day_ignore_current"
+            app:month_view_scrollable="false"
+            app:month_view_show_mode="mode_all"
+            app:other_month_lunar_text_color="#2B2F3E"
+            app:other_month_text_color="#2B2F3E"
+            app:scheme_lunar_text_color="#99ffffff"
+            app:scheme_text_color="#99ffffff"
+            app:scheme_theme_color="#128c4b"
+
+            app:selected_lunar_text_color="#3D4F5F"
+            app:selected_text_color="#3D4F5F"
+            app:selected_theme_color="#34CECE"
+
+            app:week_bar_height="100dp"
+            app:week_bar_view="com.example.calendar.tsl.TSLWeekBar"
+            app:week_start_with="sun"
+            app:week_text_color="#3D4F5F"
+            app:week_text_size="25sp" />
+    </LinearLayout>
+
+
+</LinearLayout>
